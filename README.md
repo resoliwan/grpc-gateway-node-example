@@ -4,7 +4,7 @@ Generate rest API for Grpc with node.
 # Component
 - Node server
 - Grpc http proxy server
-- curl client
+- Curl client
 
 # API
 ```
@@ -19,7 +19,7 @@ return hello
 - https://github.com/grpc/grpc
 
 # Compile proto
-- Optional (It repository already include compiled file)
+- Optional (It repository already includes compiled file)
 ```
 protoc -I/usr/local/include -I. \
   -I$GOPATH/src \
@@ -36,7 +36,7 @@ npm install
 ```
 
 # Test
-### Run http proxy server (port: 8080)
+### Run http proxy server (port 8080) 
 ```
 go run httpproxy/server.go
 ```
