@@ -1,0 +1,5 @@
+sequenceDiagram
+    Client ->>+ HttpProxy : GET /hello
+    HttpProxy ->>+ Node : Grpc /hello
+    Node -->>- HttpProxy : hello
+    HttpProxy -->>- Client : hello
